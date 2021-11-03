@@ -46,6 +46,10 @@ app.get('/:userId', async (req, res) => {
   }
 });
 
+app.get('/', async (req, res) => {
+  res.send("append /id to try out the GET API")
+});
+
 const server = app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 });
